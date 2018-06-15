@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node src/server.js",
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
     "build": "webpack",
     "test": "echo \"Error not especificado\" && exit 1"
   },
