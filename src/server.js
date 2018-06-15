@@ -28,7 +28,7 @@ app.use('/usuario', usuarioRoutes);
 
 
 // static file
-app.use(serverStatic(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use(express.static(__dirname + "/dist/"));
 //app.get(/.*/,function(req,res){
