@@ -3,8 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node src/server.js",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
+    "start": "node server.js",
     "build": "webpack",
     "test": "echo \"Error not especificado\" && exit 1"
   },
@@ -21,14 +20,15 @@
     "morgan": "~1.9.0",
     "nodemon": "^1.17.4",
     "pug": "2.0.0-beta11",
+    "serve-static": "^1.13.2",
     "toastr": "^2.1.4",
     "vue-loader": "^15.0.9",
-    "webpack-dev-server": "^3.1.4",
     "vue-youtube-embed": "^2.1.2",
     "vuetify": "^0.15.2",
     "vuex": "^2.4.0",
     "vuex-persistedstate": "^2.0.0",
-    "vuex-router-sync": "^4.3.1"
+    "vuex-router-sync": "^4.3.1",
+    "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {
     "axios": "^0.18.0",

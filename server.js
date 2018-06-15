@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const serveStatic = require('serve-static');
 const morgan = require('morgan');
   bodyParser = require('body-parser'),
   cors = require('cors'),
