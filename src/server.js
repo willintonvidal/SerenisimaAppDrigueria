@@ -35,7 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
   //res.sendfile(__dirname + "/dist/index.html");
 //});
 
-//app.use(serveStatic(__dirname + "/dist"));
+
 
 // start the server
 var server = app.listen(port, function(){
