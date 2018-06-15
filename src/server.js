@@ -29,6 +29,11 @@ app.use('/usuario', usuarioRoutes);
 // static file
 app.use(express.static(path.join(__dirname, 'public')));
 
+//app.use(express.static(__dirname + "/dist/"));
+//app.get(/.*/,function(req,res){
+  //res.sendfile(__dirname + "/dist/index.html");
+//});
+
 
 
 // start the server
