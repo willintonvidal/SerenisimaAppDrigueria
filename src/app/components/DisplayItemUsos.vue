@@ -21,7 +21,7 @@
 
       <tbody>
         <tr v-for="item in filteredItems">
-          <router-link :to="{ name: 'ItemInfo', params: {id: item._id} }"><td>{{ item.name }}</td></router-link>
+          <td><router-link :to="{ name: 'ItemInfo', params: {id: item._id} }">{{ item.name }}</router-link></td>
           <td>${{ item.price }}</td>
           <td>{{ item.descripcion }}</td>
           <td>
