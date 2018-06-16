@@ -53,7 +53,7 @@ export default{
   methods: {
     getItem()
     {
-      let uri = 'http://localhost:4000/usuario/editusuario/' + this.$route.params.id;
+      let uri = 'https://serenisima.herokuapp.com/usuario/editusuario/' + this.$route.params.id;
       this.axios.get(uri).then((response) => {
         this.item = response.data;
       });
@@ -61,7 +61,7 @@ export default{
 
     updateItem()
     {
-      let uri = 'http://localhost:4000/usuario/updateusuario/' + this.$route.params.id;
+      let uri = 'https://serenisima.herokuapp.com/usuario/updateusuario/' + this.$route.params.id;
       this.axios.post(uri, this.item).then((response) => {
         this.$router.push({name: 'DisplayUsuarios'});
       });

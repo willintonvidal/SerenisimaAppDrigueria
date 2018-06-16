@@ -59,16 +59,16 @@ export default {
   methods: {
     fetchItems()
     {
-      let uri = 'http://localhost:4000/usuario/Mostrarusuarios';   
+      let uri = 'https://serenisima.herokuapp.com/usuario/Mostrarusuarios';   
       this.axios.get(uri).then((response) => {
         this.items = response.data;
       });
     },
     deleteItem(id)
     {
-      const response = confirm('are you sure you want to delete?');
+      const response = confirm('Estas seguro que deseas eliminar?');
       if (response) {
-        let uri = 'http://localhost:4000/usuario/eliminarusu/'+id;
+        let uri = 'https://serenisima.herokuapp.com/usuario/eliminarusu/'+id;
         this.items.splice(id, 1);
         this.axios.get(uri);
       }

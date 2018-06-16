@@ -52,7 +52,7 @@
     },
     methods: {
       addUsuario(){
-        let uri = 'http://localhost:4000/usuario/addusuarios';
+        let uri = 'https://serenisima.herokuapp.com/usuario/addusuarios';
         this.axios.post(uri, this.item).then((response) => {
           console.log(response);
           toastr.success(response.data.item, 'Response');

@@ -65,7 +65,7 @@ export default {
   methods: {
     fetchItems()
     {
-      let uri = 'http://localhost:4000/items';
+      let uri = 'https://serenisima.herokuapp.com/items';
       this.axios.get(uri).then((response) => {
         this.items = response.data;
       });
@@ -74,7 +74,7 @@ export default {
     {
       const response = confirm('are you sure you want to delete?');
       if (response) {
-        let uri = 'http://localhost:4000/items/delete/'+id;
+        let uri = 'https://serenisima.herokuapp.com/items/delete/'+id;
         this.items.splice(id, 1);
         this.axios.get(uri);
       }
