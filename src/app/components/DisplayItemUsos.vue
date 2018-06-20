@@ -75,7 +75,7 @@ export default {
   computed:{
     filteredItems: function(){
       return this.items.filter((item) =>{
-        return item.descripcion.match(this.search);
+        return item.descripcion.toLowerCase().match(this.search);
       });
     }
   }

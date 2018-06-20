@@ -73,7 +73,7 @@ export default {
   computed:{
     filteredItems: function(){
       return this.items.filter((item) =>{
-        return item.name.match(this.search);
+        return item.name.indexOf(this.search) != -1 || item.name.toLowerCase().indexOf(this.search) != -1 || item.descripcion.toLowerCase().match(this.search);
       });
     }
 }

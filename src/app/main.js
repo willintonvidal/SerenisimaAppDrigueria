@@ -6,6 +6,9 @@ import VueAxios from 'vue-axios';
 import axios from 'axios';
 Vue.use(VueAxios, axios);
 
+import VueCollapse from 'vue2-collapse';
+Vue.use(VueCollapse);
+
 import App from './App.vue';
 import CreateItem from './components/CreateItem.vue';
 import DisplayItemEdit from './components/DisplayItemEdit.vue';

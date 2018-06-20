@@ -25,12 +25,12 @@
         <label>Descripcion:</label>
         <textarea class="form-control" rows="4" v-model="item.descripcion"></textarea>
       </div>
-  <!-- 
+  
       <div class="form-group">
-        <label name="product_price">Usos</label>
+        <label name="product_price">Como tomarlo....</label>
         <input type="text" class="form-control" v-model="item.usos">
       </div>
-
+<!-- 
       <div class="form-group">
         <label>fecha Vencimiento</label>
         <input type="text" class="form-control" v-model="item.fechaVencimiento">

@@ -27,14 +27,14 @@
           </div>
         </div>
       </div>
-      <!-- <div class="row">
+      <div class="row">
         <div class="col-md-6">
           <div class="form-group">
-            <label>Usos</label>
+            <label>Como tomarlo..</label>
             <input type="text" class="form-control col-md-6" v-model="item.usos">
           </div>
         </div>
-      </div> -->
+      </div>
       <!-- <div class="row">
         <div class="col-md-6">
           <div class="form-group">

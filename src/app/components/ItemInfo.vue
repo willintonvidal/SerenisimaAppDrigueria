@@ -14,6 +14,8 @@
   <div class="card-body">
     <h5 class="card-title">${{item.price}}</h5>
     <p class="card-text">{{item.descripcion}}</p>
+    <h4>Como debe tomarse... o suministrar el medicamento?</h4>
+    <p class="card-text">{{item.usos}}</p>
   </div>   
   </div>
   </div>
